@@ -34,6 +34,8 @@ body {
 .reel-title {
     font-size: 1rem;
     font-weight: bold;
+    background: linear-gradient(to right, #5A0E14, #8B3E46);
+    color: white;
     margin-bottom: 0.5rem;
 }
 
@@ -71,5 +73,11 @@ body {
 @media (max-width: 900px) {
     .reel {
         flex: 0 1 calc(50% - 1rem); /* 2 columns with gap adjustment */
+    }
+}
+
+@media (min-width: 901px) {
+    .reels {
+        gap: 2rem; /* Increase space between reels */
     }
 }
