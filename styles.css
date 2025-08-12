@@ -39,6 +39,13 @@ body {
     margin-bottom: 0.5rem;
     padding: 4px 6px;
     line-height: 1.2;
+
+    /* NEW: fix uneven height */
+    min-height: 2.5rem; /* adjust if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .video-wrapper {
