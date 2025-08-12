@@ -32,11 +32,13 @@ body {
 }
 
 .reel-title {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: bold;
-    background: linear-gradient(to right, #5A0E14, #8B3E46);
+    background: linear-gradient(to right, #5A0E14, #9e5a61);
     color: white;
     margin-bottom: 0.5rem;
+    padding: 4px 6px;
+    line-height: 1.2;
 }
 
 .video-wrapper {
@@ -72,12 +74,18 @@ body {
 
 @media (max-width: 900px) {
     .reel {
-        flex: 0 1 calc(33.333% - 1rem); /* 3 columns with gap adjustment */
+        flex: 0 1 calc(33.333% - 0.5rem); /* 3 columns with small gap */
     }
 }
 
 @media (min-width: 901px) {
     .reels {
         gap: 4rem; /* Increase space between reels */
+    }
+}
+
+@media (max-width: 900px) {
+    .reels {
+        gap: 0.5rem; /* tighter spacing on mobile */
     }
 }
