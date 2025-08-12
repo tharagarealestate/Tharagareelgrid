@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 10;
     font-family: 'Georgia', serif;
     background: #F9F5EF;
 }
@@ -11,7 +11,7 @@ body {
 
 .section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #5A0E14; /* Tharaga Maroon */
     margin-bottom: 30px;
 }
@@ -39,7 +39,7 @@ body {
 
 .overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 100%;
     padding: 8px 12px;
     background: linear-gradient(to top, rgba(90,14,20,0.8), rgba(90,14,20,0));
