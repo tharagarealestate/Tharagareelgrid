@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #F9F5EF;
+}
+
+.reels-section {
+    padding: 40px 20px;
+    background: #F9F5EF;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #5A0E14; /* Tharaga Maroon */
+    margin-bottom: 30px;
+}
+
+.reels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(90,14,20,0.8), rgba(90,14,20,0));
+    color: white;
+    text-align: left;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+@media (max-width: 900px) {
+    .reels {
+        grid-template-columns: 1fr;
+    }
+}
