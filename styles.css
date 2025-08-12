@@ -12,7 +12,7 @@ body {
 
 .section-title {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #5A0E14; /* Tharaga Maroon */
     margin-bottom: 1.5rem;
 }
@@ -70,6 +70,6 @@ body {
 
 @media (max-width: 900px) {
     .reels {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
