@@ -14,7 +14,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     color: #5A0E14; /* Tharaga Maroon */
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .reels {
@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 900px) {
     .reel {
-        flex: 0 1 calc(50% - 1rem); /* 3 columns with small gap */
+        flex: 0 1 calc(50% - 2rem); /* 3 columns with small gap */
     }
 }
 
