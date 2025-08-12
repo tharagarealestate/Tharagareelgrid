@@ -89,3 +89,9 @@ body {
         gap: 0.5rem; /* tighter spacing on mobile */
     }
 }
+
+@media (max-width: 768px) {
+    .reels-section {
+        padding: 1rem 0.5rem; /* less padding on mobile */
+    }
+}
