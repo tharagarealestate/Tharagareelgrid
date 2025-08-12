@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 900px) {
     .reel {
-        flex: 0 1 calc(50% - 2rem); /* 3 columns with small gap */
+        flex: 0 1 calc(50% - 4rem); /* 3 columns with small gap */
     }
 }
 
