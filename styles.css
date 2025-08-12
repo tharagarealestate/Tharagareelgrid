@@ -6,8 +6,9 @@ body {
 
 .reels-section {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     background: #faf7f3;
+    margin-bottom: 1rem; /* less gap before next section */
 }
 
 .section-title {
@@ -20,6 +21,7 @@ body {
 .reels {
     display: flex;
     justify-content: center;
+    align-items: flex-start; /* align all reels to the same top line */
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -28,7 +30,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px; /* adjust width */
+    max-width: 300px;
+    flex: 1 1 300px;
 }
 
 .reel-title {
@@ -40,8 +43,8 @@ body {
     padding: 4px 6px;
     line-height: 1.2;
 
-    /* NEW: fix uneven height */
-    min-height: 2.5rem; /* adjust if needed */
+    /* Fix uneven height */
+    min-height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +56,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    aspect-ratio: 0.68 : 1;
+    aspect-ratio: 0.68 / 1;
 }
 
 .video-wrapper video {
@@ -70,7 +73,6 @@ body {
     padding: 8px 12px;
     background: linear-gradient(to top, rgba(90,14,20,0.8), rgba(90,14,20,0));
     color: white;
-    /*text-align: left;*/
 }
 
 .overlay h3 {
@@ -81,24 +83,21 @@ body {
 
 @media (max-width: 900px) {
     .reel {
-        flex: 0 1 calc(33.333% - 0.5rem); /* 3 columns with small gap */
+        flex: 0 1 calc(33.333% - 0.5rem); /* 3 columns on mobile */
+    }
+    .reels {
+        gap: 0.5rem;
     }
 }
 
 @media (min-width: 901px) {
     .reels {
-        gap: 4rem; /* Increase space between reels */
-    }
-}
-
-@media (max-width: 900px) {
-    .reels {
-        gap: 0.5rem; /* tighter spacing on mobile */
+        gap: 4rem;
     }
 }
 
 @media (max-width: 768px) {
     .reels-section {
-        padding: 1rem 0.5rem; /* less padding on mobile */
+        padding: 1rem 0.5rem;
     }
 }
