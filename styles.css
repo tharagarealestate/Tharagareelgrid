@@ -78,6 +78,6 @@ body {
 
 @media (min-width: 901px) {
     .reels {
-        gap: 2rem; /* Increase space between reels */
+        gap: 4rem; /* Increase space between reels */
     }
 }
