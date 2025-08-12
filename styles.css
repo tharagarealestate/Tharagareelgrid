@@ -72,7 +72,7 @@ body {
 
 @media (max-width: 900px) {
     .reel {
-        flex: 0 1 calc(50% - 1rem); /* 2 columns with gap adjustment */
+        flex: 0 1 calc(33.333% - 1rem); /* 3 columns with gap adjustment */
     }
 }
 
