@@ -27,7 +27,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    aspect-ratio: 4 / 1;
+    aspect-ratio: 0.68 : 1;
 }
 
 .video-wrapper video {
