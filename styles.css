@@ -1,5 +1,5 @@
 body {
-    margin: 10;
+    margin: 10px;
     font-family: 'Georgia', serif;
     background: #F9F5EF;
 }
@@ -55,6 +55,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s ease; /* move shadow transition to wrapper */
     aspect-ratio: 0.68 : 1;
 }
 
@@ -63,12 +64,17 @@ body {
     height: 100%;
     object-fit: contain;
     display: block;
+    transition: transform 0.2s ease; /* transition on base state for smooth in/out */
+    will-change: transform;
 }
 
+/* Hover changes: transform on video, shadow on wrapper */
 .video-wrapper:hover video {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(110, 13, 37, 0.16);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(-2px);
+}
+
+.video-wrapper:hover {
+    box-shadow: 0 16px 36px rgba(110, 13, 37, 0.16);
 }
 
 
